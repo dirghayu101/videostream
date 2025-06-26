@@ -4,7 +4,7 @@ import { Header, Footer } from '@/components/common';
 import { HeroSlideshow, FeaturedSection, ContentSection } from '@/components/home';
 import { LoginModal, RegisterModal } from '@/components/auth';
 
-const Homepage: React.FC = () => {
+export const Homepage: React.FC = () => {
   const [movies, setMovies] = useState<Media[]>([]);
   const [tvShows, setTvShows] = useState<Media[]>([]);
   const [heroMovies, setHeroMovies] = useState<Media[]>([]);
@@ -85,5 +85,3 @@ const Homepage: React.FC = () => {
     </div>
   );
 };
-
-export default Homepage;
