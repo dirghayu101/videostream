@@ -1,0 +1,1 @@
+Endpoint for tv shows and movies: /media/:id

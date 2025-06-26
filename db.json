@@ -15,13 +15,13 @@
     {
       "id": 3,
       "title": "Inception",
-      "image": "https://images.unsplash.com/photo-1489599510549-39d85e87b08c?w=800&h=450&fit=crop",
+      "image": "https://static01.nyt.com/images/2010/07/25/arts/25scott-span/25scott-span-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
       "description": "A mind-bending thriller about dreams within dreams."
     },
     {
       "id": 4,
       "title": "Spider-Man: No Way Home",
-      "image": "https://images.unsplash.com/photo-1635863138275-d9864d5d2407?w=800&h=450&fit=crop",
+      "image": "https://www.rollingstone.com/wp-content/uploads/2021/12/SpiderManFFH.jpg?w=1581&h=1054&crop=1",
       "description": "Spider-Man's identity is revealed, bringing chaos to his life."
     },
     {
@@ -45,13 +45,13 @@
     {
       "id": 8,
       "title": "Black Widow",
-      "image": "https://images.unsplash.com/photo-1512070679279-8988d32161be?w=800&h=450&fit=crop",
+      "image": "https://cdn.hswstatic.com/gif/black-widow-1.jpg",
       "description": "Natasha Romanoff confronts her past as a spy."
     },
     {
       "id": 9,
       "title": "No Time to Die",
-      "image": "https://images.unsplash.com/photo-1611003229968-89bf8b2d86ca?w=800&h=450&fit=crop",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d77c3a7f-0780-4a0e-b61f-5de00c06adb8/de0eyj1-c40e506a-b34f-4301-ae13-eb849e57e8e7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q3N2MzYTdmLTA3ODAtNGEwZS1iNjFmLTVkZTAwYzA2YWRiOFwvZGUwZXlqMS1jNDBlNTA2YS1iMzRmLTQzMDEtYWUxMy1lYjg0OWU1N2U4ZTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.l3HBVSn9wOLA2RTgYg36uJtmxUhXHFaxDXENs8sV0f4",
       "description": "James Bond's final mission in this thrilling conclusion."
     }
   ],
@@ -81,8 +81,8 @@
     {
       "id": 3,
       "title": "Inception",
-      "image": "https://images.unsplash.com/photo-1489599510549-39d85e87b08c?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1489599510549-39d85e87b08c?w=800&h=1200&fit=crop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSevUsx9JAl2R48BU7n6XeQUlD4NOB3frvjdQ&s",
+      "largePoster": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a447f0f0-8834-4538-8519-2ee6de0d4e02/d6c2i5v-49dd2355-5ead-4d2c-8831-9e4b674bb1be.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E0NDdmMGYwLTg4MzQtNDUzOC04NTE5LTJlZTZkZTBkNGUwMlwvZDZjMmk1di00OWRkMjM1NS01ZWFkLTRkMmMtODgzMS05ZTRiNjc0YmIxYmUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OfOsMC6pIEoZ9ylhOAMkJT6NxM8VSmDwXnuifCBkWaE",
       "synopsis": "Dom Cobb is a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets.",
       "rentPrice": 3.99,
       "purchasePrice": 12.99,
@@ -92,8 +92,8 @@
     {
       "id": 4,
       "title": "Spider-Man: No Way Home",
-      "image": "https://images.unsplash.com/photo-1635863138275-d9864d5d2407?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1635863138275-d9864d5d2407?w=800&h=1200&fit=crop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnNUuluFOjwPn8Lt5IK0pQ0Uw2ZDVe5a8HkA&s",
+      "largePoster": "https://live.staticflickr.com/65535/51725408655_394ff30d84_b.jpg",
       "synopsis": "Spider-Man's identity is revealed to the entire world. Desperate for help, Peter turns to Doctor Strange.",
       "rentPrice": 5.99,
       "purchasePrice": 24.99,
@@ -147,8 +147,8 @@
     {
       "id": 9,
       "title": "No Time to Die",
-      "image": "https://images.unsplash.com/photo-1611003229968-89bf8b2d86ca?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1611003229968-89bf8b2d86ca?w=800&h=1200&fit=crop",
+      "image": "https://img.goodfon.com/original/5120x2880/c/4f/no-time-to-die-daniel-craig-007-deniel-kreig.jpg",
+      "largePoster": "https://cdn.printerval.com/unsafe/960x960/asset/11561d0c0b010b0c190c111b561b1715574b414b404d40414c570a571114574948484d484e574c4c4e4f48414149494c571114271e0d1414001e0d1414564c4c4e4f48414149494c274e4f491c5612081f",
       "synopsis": "James Bond has left active service. His peace is short-lived when Felix Leiter asks for help finding a kidnapped scientist.",
       "rentPrice": 4.99,
       "purchasePrice": 18.99,
@@ -193,8 +193,8 @@
     {
       "id": 1,
       "title": "Breaking Bad",
-      "image": "https://images.unsplash.com/photo-1489599510549-39d85e87b08c?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1489599510549-39d85e87b08c?w=800&h=1200&fit=crop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnlVJuAOlwJYbfmSdpVvgQCoyoh6VRwN43mg&s",
+      "largePoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkR183yuSei7UmML_9uLykwVbz_vg9GsUR5w&s",
       "synopsis": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine.",
       "rentPrice": 2.99,
       "purchasePrice": 39.99,
@@ -215,8 +215,8 @@
     {
       "id": 3,
       "title": "Stranger Things",
-      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=1200&fit=crop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNt9Agi9nyVSdtuOtIZZ8pq-mEavcz5nfpIA&s",
+      "largePoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5aeYaxyF-GPaj4FHBuDI7LrjRdPzY2uqL7Q&s",
       "synopsis": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces.",
       "rentPrice": 2.99,
       "purchasePrice": 34.99,
@@ -259,8 +259,8 @@
     {
       "id": 7,
       "title": "Ozark",
-      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=1200&fit=crop",
+      "image": "https://live.staticflickr.com/4829/46771503322_169f7d54b9_b.jpg",
+      "largePoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmX4bpDIMNObspKjZkdlBm6uwpkJDnIdbxMQ&s",
       "synopsis": "A financial advisor drags his family to the Missouri Ozarks, where he must launder money to appease a drug boss.",
       "rentPrice": 2.99,
       "purchasePrice": 32.99,
@@ -270,8 +270,8 @@
     {
       "id": 8,
       "title": "House of Cards",
-      "image": "https://images.unsplash.com/photo-1440327786815-916ad1a7dc83?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1440327786815-916ad1a7dc83?w=800&h=1200&fit=crop",
+      "image": "https://i2.pickpik.com/photos/926/405/240/house-of-cards-fragile-patience-sensitive-preview.jpg",
+      "largePoster": "https://live.staticflickr.com/40/84452168_fa5f7e263a_c.jpg",
       "synopsis": "A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.",
       "rentPrice": 2.99,
       "purchasePrice": 35.99,
@@ -292,8 +292,8 @@
     {
       "id": 10,
       "title": "Money Heist",
-      "image": "https://images.unsplash.com/photo-1489599510549-39d85e87b08c?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1489599510549-39d85e87b08c?w=800&h=1200&fit=crop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPkshawbuDgEfQfYRN23rpq-LJz-uhCVCJUg&s",
+      "largePoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr5n-CLCwRqDUjLaoAraAtHxCwH0qfNc-OlQ&s",
       "synopsis": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
       "rentPrice": 2.99,
       "purchasePrice": 31.99,
@@ -303,8 +303,8 @@
     {
       "id": 11,
       "title": "Squid Game",
-      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=1200&fit=crop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYysDw3p5oWD5Jmk6qeHnBYYfOdeaMxkVIQg&s",
+      "largePoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3zcXt01J19lLwZw1UbXSztNgBzHFb06htoQ&s",
       "synopsis": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games for a tempting prize.",
       "rentPrice": 3.99,
       "purchasePrice": 25.99,
@@ -314,8 +314,8 @@
     {
       "id": 12,
       "title": "Bridgerton",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=600&fit=crop",
-      "largePoster": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=1200&fit=crop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOJrO5Z5MVRLLzvB__uanXATIi0apoHCewg&s",
+      "largePoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeW2TTW7CsobpZhzC9m4ikBBkiDQKKfnS9LQ&s",
       "synopsis": "Wealth, lust, and betrayal set in the backdrop of Regency era England, seen through the eyes of the powerful Bridgerton family.",
       "rentPrice": 2.99,
       "purchasePrice": 29.99,
