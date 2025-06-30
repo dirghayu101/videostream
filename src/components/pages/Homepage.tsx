@@ -26,7 +26,7 @@ export const Homepage: React.FC = () => {
         setHeroMovies(heroMoviesData);
 
         // Fetch TV shows
-        const tvShowsResponse = await fetch('http://localhost:3000/tvshows');
+        const tvShowsResponse = await fetch('http://localhost:3000/tvShows');
         const tvShowsData = await tvShowsResponse.json();
         setTvShows(tvShowsData);
 
