@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
+
 interface HeaderProps {
   onLoginClick: () => void;
   onRegisterClick: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onLoginClick, onRegisterClick }) => {
+export const Header: React.FC<HeaderProps> = ({
+  onLoginClick,
+  onRegisterClick,
+}) => {
   return (
     <header className="bg-black text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
@@ -11,10 +16,15 @@ export const Header: React.FC<HeaderProps> = ({ onLoginClick, onRegisterClick })
           StreamFlix
         </a>
         <nav className="hidden md:flex space-x-6">
-          <a href="/" className="hover:text-red-600 transition-colors">Home</a>
-          <a href="/browse" className="hover:text-red-600 transition-colors">Browse</a>
-          <a href="/movies" className="hover:text-red-600 transition-colors">Movies</a>
-          <a href="/tvshows" className="hover:text-red-600 transition-colors">TV Shows</a>
+          <Link to="/" className="hover:text-red-600 transition-colors">
+            Home
+          </Link>
+          <Link to="/movies" className="hover:text-red-600 transition-colors">
+            Movies
+          </Link>
+          <Link to="/tvshows" className="hover:text-red-600 transition-colors">
+            TV Shows
+          </Link>
         </nav>
         <div className="flex space-x-4">
           <button
@@ -34,4 +44,3 @@ export const Header: React.FC<HeaderProps> = ({ onLoginClick, onRegisterClick })
     </header>
   );
 };
-

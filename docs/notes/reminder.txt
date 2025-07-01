@@ -1,1 +1,3 @@
-Endpoint for tv shows and movies: /media/:id
+- Endpoint for tv shows and movies: /media/:id
+- Modify anchor to Link tag.
+- Have consistent imports throughout project.

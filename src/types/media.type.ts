@@ -10,3 +10,9 @@ export interface Media {
   genre?: string;
   description?: string;
 }
+
+export type MediaConfig = {
+  type: string;
+  title: string;
+  endpoint: string;
+}
