@@ -1,5 +1,5 @@
 import type { RouteObject } from "react-router-dom";
-import { Homepage, LoadingScreen, MediaPage } from "@/components/pages";
+import { Homepage, MediaPage } from "@/components/pages";
 import { moviesConfig, tvShowsConfig, homepageConfig, mediaDetailConfig } from "@/config";
 import { MediaDetailPage } from "@/components/pages/MediaDetailPage";
 
@@ -7,10 +7,6 @@ export const routes: RouteObject[] = [
   {
     path: "/",
     element: <Homepage {...homepageConfig} />,
-  },
-  {
-    path: "/loading",
-    element:<LoadingScreen />,
   },
   {
     path: "/movies",
