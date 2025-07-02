@@ -15,7 +15,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({ heroMovies }) => {
       const timer = setInterval(() => {
         // If the current slide is the last one, let's say 9, then 10 % 10 = 0, so it will loop back to the first slide.
         setCurrentSlide((prev) => (prev + 1) % heroMovies.length);
-      }, 5000);
+      }, 2200);
       // This is the return function that clears the interval when the component unmounts or when heroMovies changes.
       return () => clearInterval(timer);
     }
