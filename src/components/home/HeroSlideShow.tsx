@@ -55,13 +55,13 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({ heroMovies }) => {
               </p>
               <div className="flex space-x-4">
                 <Link
-                  to={`/movie/${currentMovie.id}`}
+                  to={`/movies/${currentMovie.id}`}
                   className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors"
                 >
                   Watch Now
                 </Link>
                 <Link
-                  to={`/movie/${currentMovie.id}`}
+                  to={`/movies/${currentMovie.id}`}
                   className="bg-gray-600 bg-opacity-70 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors"
                 >
                   More Info

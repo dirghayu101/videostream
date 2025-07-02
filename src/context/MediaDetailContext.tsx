@@ -2,7 +2,7 @@ import { createContext, useContext } from "react";
 import type { Media } from "@/types";
 
 interface MediaDetailContextType {
-  media: Media | null;
+  media: Media;
   loading: boolean;
 }
 

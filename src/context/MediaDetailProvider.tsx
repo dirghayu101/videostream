@@ -8,10 +8,11 @@ import { MediaDetailContext } from "@/context/MediaDetailContext";
 interface MediaDetailProviderProps {
   endpoint: string;
   children: ReactNode;
+  fallback?: ReactNode;
 }
 
-export const MediaDetailProvider: React.FC<MediaDetailProviderProps> = ({ endpoint, children }) => {
-  const [media, setMedia] = useState<Media | null>(null);
+export const MediaDetailProvider: React.FC<MediaDetailProviderProps> = ({ endpoint, children, fallback = null }) => {
+  const [media, setMedia] = useState<Media>();
   const [loading, setLoading] = useState(true);
   const { type, id } = useParams<MediaDetailParams>();
 
@@ -34,8 +35,10 @@ export const MediaDetailProvider: React.FC<MediaDetailProviderProps> = ({ endpoi
     fetchMedia();
   }, [endpoint, type, id]);
 
+  if (loading) return fallback;
+
   return (
-    <MediaDetailContext.Provider value={{ media, loading }}>
+    <MediaDetailContext.Provider value={{ media: media as Media, loading }}>
       {children}
     </MediaDetailContext.Provider>
   );
