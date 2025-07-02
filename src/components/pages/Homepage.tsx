@@ -7,6 +7,8 @@ import {
   ContentSection,
 } from "@/components/home";
 import { LoadingScreen } from "@/components/pages";
+// Mock data imports as json-server only works in local development.
+import {heroMovieData, movieData, tvShowData} from "@/const"
 
 export const Homepage: React.FC<HomepageConfig> = ({
   movieEndpoint,
@@ -35,9 +37,11 @@ export const Homepage: React.FC<HomepageConfig> = ({
         const tvShowsResponse = await fetch(tvShowsEndpoint);
         const tvShowsData = await tvShowsResponse.json();
         setTvShows(tvShowsData);
-
         setLoading(false);
       } catch (error) {
+        setTvShows(tvShowData); // Fallback to mock data
+        setMovies(movieData); // Fallback to mock data
+        setHeroMovies(heroMovieData); // Fallback to mock data
         console.error("Error fetching data:", error);
         setLoading(false);
       }

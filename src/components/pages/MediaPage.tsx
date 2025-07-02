@@ -31,10 +31,8 @@ export const MediaPage: React.FC<MediaConfig> = ({ type, title, endpoint}) => {
     return <LoadingScreen />;
   }
   return (
-    <>
       <Layout>
         <MediaList media={media} type={type} title={title} />
       </Layout>
-    </>
   );
 };
