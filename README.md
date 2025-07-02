@@ -259,10 +259,6 @@ The build files will be generated in the `dist/` directory.
 
 Active Deployment Link: [Vercel Deployment](https://videostream-n458dyj3r-dirghayu101s-projects.vercel.app/)
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 Dirghayu Joshi - <dirghayujoshi48@gmail.com>

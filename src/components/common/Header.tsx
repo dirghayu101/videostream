@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HamburgerMenu } from "@/components/home";
 
 interface HeaderProps {
   onLoginClick: () => void;
@@ -26,6 +27,8 @@ export const Header: React.FC<HeaderProps> = ({
             TV Shows
           </Link>
         </nav>
+        {/* Hamburger Menu for Mobile */}
+        < HamburgerMenu />
         <div className="flex space-x-4">
           <button
             onClick={onLoginClick}
