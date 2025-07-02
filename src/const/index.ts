@@ -1,1 +1,1 @@
-export * from './homepage.const';
+export * from './media.const';

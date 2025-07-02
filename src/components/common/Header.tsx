@@ -13,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="bg-black text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-2xl font-bold text-red-600">
-          StreamFlix
+          Netflix
         </a>
         <nav className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-red-600 transition-colors">

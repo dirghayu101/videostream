@@ -8,7 +8,7 @@ export const ContentSection: React.FC = () => {
               Experience Cinema Like Never Before
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              StreamFlix brings you the latest blockbusters and timeless classics from Hollywood and beyond. 
+              Netflix brings you the latest blockbusters and timeless classics from Hollywood and beyond. 
               With our cutting-edge streaming technology, enjoy crystal-clear quality and immersive sound 
               that makes every viewing experience unforgettable.
             </p>

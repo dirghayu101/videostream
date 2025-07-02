@@ -16,3 +16,12 @@ export type MediaConfig = {
   title: string;
   endpoint: string;
 }
+
+export type MediaDetailConfig = {
+  endpoint: string;
+};
+
+export type MediaDetailParams = {
+  type: "movies" | "tvshows";
+  id: string;
+};
