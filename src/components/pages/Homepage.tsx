@@ -26,16 +26,26 @@ export const Homepage: React.FC<HomepageConfig> = ({
         // Fetch movies
         const moviesResponse = await fetch(movieEndpoint);
         const moviesData = await moviesResponse.json();
+        // Fallback to mock data if the fetch fails
+        if (!Array.isArray(moviesData) || moviesData.length === 0) {
+          throw new Error("No movies data found");
+        }
         setMovies(moviesData);
 
         // Fetch hero movies
         const heroMoviesResponse = await fetch(heroMovieEndpoint);
         const heroMoviesData = await heroMoviesResponse.json();
+        if( !Array.isArray(heroMoviesData) || heroMoviesData.length === 0) {
+          throw new Error("No hero movies data found");
+        }
         setHeroMovies(heroMoviesData);
 
         // Fetch TV shows
         const tvShowsResponse = await fetch(tvShowsEndpoint);
         const tvShowsData = await tvShowsResponse.json();
+        if (!Array.isArray(tvShowsData) || tvShowsData.length === 0) {
+          throw new Error("No TV shows data found");
+        }
         setTvShows(tvShowsData);
         setLoading(false);
       } catch (error) {
