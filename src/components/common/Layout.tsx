@@ -9,13 +9,14 @@ export const Layout: React.FC<{
   const [showLoginModal, setShowLoginModal] = useState(false);
   // NOTE: Take care of userProfileEndpoint which will show the current logged in user details/profile.
   // const { registerEndpoint, loginEndpoint, userProfileEndpoint } = layoutConfig;
-  const { registerEndpoint, loginEndpoint } = layoutConfig;
+  const { registerEndpoint, loginEndpoint, searchEndpoint } = layoutConfig;
   const [showRegisterModal, setShowRegisterModal] = useState(false);
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header
         onLoginClick={() => setShowLoginModal(true)}
         onRegisterClick={() => setShowRegisterModal(true)}
+        searchEndpoint={searchEndpoint}
       />
 
       <main className="flex-grow">{children}</main>
