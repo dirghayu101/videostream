@@ -9,6 +9,8 @@ export interface Media {
   year?: number;
   genre?: string;
   description?: string;
+  mediaType?: "movie" | "tvshow";
+  featured?: boolean;
 }
 
 export type MediaConfig = {

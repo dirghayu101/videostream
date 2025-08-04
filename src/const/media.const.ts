@@ -11,7 +11,9 @@ export const movieData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 14.99,
         "year": 2008,
-        "genre": "Action, Crime, Drama"
+        "genre": "Action, Crime, Drama",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 2,
@@ -22,7 +24,9 @@ export const movieData: Media[] = [
         "rentPrice": 4.99,
         "purchasePrice": 19.99,
         "year": 2019,
-        "genre": "Action, Adventure, Drama"
+        "genre": "Action, Adventure, Drama",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 3,
@@ -33,7 +37,9 @@ export const movieData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 12.99,
         "year": 2010,
-        "genre": "Action, Sci-Fi, Thriller"
+        "genre": "Action, Sci-Fi, Thriller",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 4,
@@ -44,7 +50,9 @@ export const movieData: Media[] = [
         "rentPrice": 5.99,
         "purchasePrice": 24.99,
         "year": 2021,
-        "genre": "Action, Adventure, Fantasy"
+        "genre": "Action, Adventure, Fantasy",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 5,
@@ -55,7 +63,9 @@ export const movieData: Media[] = [
         "rentPrice": 4.99,
         "purchasePrice": 19.99,
         "year": 2022,
-        "genre": "Action, Drama"
+        "genre": "Action, Drama",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 6,
@@ -66,7 +76,9 @@ export const movieData: Media[] = [
         "rentPrice": 4.99,
         "purchasePrice": 17.99,
         "year": 2021,
-        "genre": "Action, Adventure, Drama"
+        "genre": "Action, Adventure, Drama",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 7,
@@ -77,7 +89,9 @@ export const movieData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 16.99,
         "year": 2021,
-        "genre": "Action, Sci-Fi"
+        "genre": "Action, Sci-Fi",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 8,
@@ -88,7 +102,9 @@ export const movieData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 14.99,
         "year": 2021,
-        "genre": "Action, Adventure, Sci-Fi"
+        "genre": "Action, Adventure, Sci-Fi",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 9,
@@ -99,7 +115,9 @@ export const movieData: Media[] = [
         "rentPrice": 4.99,
         "purchasePrice": 18.99,
         "year": 2021,
-        "genre": "Action, Adventure, Thriller"
+        "genre": "Action, Adventure, Thriller",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 10,
@@ -110,7 +128,9 @@ export const movieData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 15.99,
         "year": 2021,
-        "genre": "Action, Crime, Thriller"
+        "genre": "Action, Crime, Thriller",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 11,
@@ -121,7 +141,9 @@ export const movieData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 14.99,
         "year": 2020,
-        "genre": "Action, Adventure, Fantasy"
+        "genre": "Action, Adventure, Fantasy",
+        "mediaType": "movie",
+        "featured": false
     },
     {
         "id": 12,
@@ -132,7 +154,9 @@ export const movieData: Media[] = [
         "rentPrice": 4.99,
         "purchasePrice": 17.99,
         "year": 2020,
-        "genre": "Action, Sci-Fi, Thriller"
+        "genre": "Action, Sci-Fi, Thriller",
+        "mediaType": "movie",
+        "featured": false
     }
 ]
 
@@ -146,7 +170,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 2.99,
         "purchasePrice": 39.99,
         "year": 2008,
-        "genre": "Crime, Drama, Thriller"
+        "genre": "Crime, Drama, Thriller",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 2,
@@ -157,7 +183,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 49.99,
         "year": 2011,
-        "genre": "Action, Adventure, Drama"
+        "genre": "Action, Adventure, Drama",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 3,
@@ -168,7 +196,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 2.99,
         "purchasePrice": 34.99,
         "year": 2016,
-        "genre": "Drama, Fantasy, Horror"
+        "genre": "Drama, Fantasy, Horror",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 4,
@@ -179,7 +209,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 29.99,
         "year": 2019,
-        "genre": "Action, Adventure, Fantasy"
+        "genre": "Action, Adventure, Fantasy",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 5,
@@ -190,7 +222,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 2.99,
         "purchasePrice": 39.99,
         "year": 2016,
-        "genre": "Biography, Drama, History"
+        "genre": "Biography, Drama, History",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 6,
@@ -201,7 +235,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 27.99,
         "year": 2019,
-        "genre": "Action, Adventure, Drama"
+        "genre": "Action, Adventure, Drama",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 7,
@@ -212,7 +248,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 2.99,
         "purchasePrice": 32.99,
         "year": 2017,
-        "genre": "Crime, Drama, Thriller"
+        "genre": "Crime, Drama, Thriller",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 8,
@@ -223,7 +261,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 2.99,
         "purchasePrice": 35.99,
         "year": 2013,
-        "genre": "Drama"
+        "genre": "Drama",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 9,
@@ -234,7 +274,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 28.99,
         "year": 2019,
-        "genre": "Action, Comedy, Crime"
+        "genre": "Action, Comedy, Crime",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 10,
@@ -245,7 +287,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 2.99,
         "purchasePrice": 31.99,
         "year": 2017,
-        "genre": "Action, Crime, Mystery"
+        "genre": "Action, Crime, Mystery",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 11,
@@ -256,7 +300,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 3.99,
         "purchasePrice": 25.99,
         "year": 2021,
-        "genre": "Action, Drama, Mystery"
+        "genre": "Action, Drama, Mystery",
+        "mediaType": "tvshow",
+        "featured": false
     },
     {
         "id": 12,
@@ -267,7 +313,9 @@ export const tvShowData: Media[] = [
         "rentPrice": 2.99,
         "purchasePrice": 29.99,
         "year": 2020,
-        "genre": "Drama, Romance"
+        "genre": "Drama, Romance",
+        "mediaType": "tvshow",
+        "featured": false
     }
 ]
 
@@ -276,54 +324,126 @@ export const heroMovieData: Media[] = [
         "id": 1,
         "title": "The Dark Knight",
         "image": "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=800&h=450&fit=crop",
+        "largePoster": "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=1600&h=900&fit=crop",
+        "synopsis": "Batman faces his greatest challenge yet when the Joker wreaks havoc on Gotham City.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2008,
+        "genre": "Action, Crime, Drama",
+        "mediaType": "movie",
+        "featured": true,
         "description": "Batman faces his greatest challenge yet when the Joker wreaks havoc on Gotham City."
     },
     {
         "id": 2,
         "title": "Avengers: Endgame",
         "image": "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=800&h=450&fit=crop",
+        "largePoster": "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=1600&h=900&fit=crop",
+        "synopsis": "The Avengers assemble one final time to reverse the destruction caused by Thanos.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2019,
+        "genre": "Action, Adventure, Drama",
+        "mediaType": "movie",
+        "featured": true,
         "description": "The Avengers assemble one final time to reverse the destruction caused by Thanos."
     },
     {
         "id": 3,
         "title": "Inception",
         "image": "https://static01.nyt.com/images/2010/07/25/arts/25scott-span/25scott-span-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+        "largePoster": "https://static01.nyt.com/images/2010/07/25/arts/25scott-span/25scott-span-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+        "synopsis": "A mind-bending thriller about dreams within dreams.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2010,
+        "genre": "Action, Sci-Fi, Thriller",
+        "mediaType": "movie",
+        "featured": true,
         "description": "A mind-bending thriller about dreams within dreams."
     },
     {
         "id": 4,
         "title": "Spider-Man: No Way Home",
         "image": "https://www.rollingstone.com/wp-content/uploads/2021/12/SpiderManFFH.jpg?w=1581&h=1054&crop=1",
+        "largePoster": "https://www.rollingstone.com/wp-content/uploads/2021/12/SpiderManFFH.jpg?w=1581&h=1054&crop=1",
+        "synopsis": "Spider-Man's identity is revealed, bringing chaos to his life.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2021,
+        "genre": "Action, Adventure, Fantasy",
+        "mediaType": "movie",
+        "featured": true,
         "description": "Spider-Man's identity is revealed, bringing chaos to his life."
     },
     {
         "id": 5,
         "title": "Top Gun: Maverick",
         "image": "https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?w=800&h=450&fit=crop",
+        "largePoster": "https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?w=1600&h=900&fit=crop",
+        "synopsis": "Maverick returns to train a new generation of pilots.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2022,
+        "genre": "Action, Drama",
+        "mediaType": "movie",
+        "featured": true,
         "description": "Maverick returns to train a new generation of pilots."
     },
     {
         "id": 6,
         "title": "Dune",
         "image": "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800&h=450&fit=crop",
+        "largePoster": "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=1600&h=900&fit=crop",
+        "synopsis": "A young man's journey on a desert planet that holds the key to the future.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2021,
+        "genre": "Action, Adventure, Drama",
+        "mediaType": "movie",
+        "featured": true,
         "description": "A young man's journey on a desert planet that holds the key to the future."
     },
     {
         "id": 7,
         "title": "The Matrix Resurrections",
         "image": "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=800&h=450&fit=crop",
+        "largePoster": "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=1600&h=900&fit=crop",
+        "synopsis": "Neo returns to the Matrix in this mind-bending sequel.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2021,
+        "genre": "Action, Sci-Fi",
+        "mediaType": "movie",
+        "featured": true,
         "description": "Neo returns to the Matrix in this mind-bending sequel."
     },
     {
         "id": 8,
         "title": "Black Widow",
         "image": "https://cdn.hswstatic.com/gif/black-widow-1.jpg",
+        "largePoster": "https://cdn.hswstatic.com/gif/black-widow-1.jpg",
+        "synopsis": "Natasha Romanoff confronts her past as a spy.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2021,
+        "genre": "Action, Adventure, Sci-Fi",
+        "mediaType": "movie",
+        "featured": true,
         "description": "Natasha Romanoff confronts her past as a spy."
     },
     {
         "id": 9,
         "title": "No Time to Die",
         "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d77c3a7f-0780-4a0e-b61f-5de00c06adb8/de0eyj1-c40e506a-b34f-4301-ae13-eb849e57e8e7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q3N2MzYTdmLTA3ODAtNGEwZS1iNjFmLTVkZTAwYzA2YWRiOFwvZGUwZXlqMS1jNDBlNTA2YS1iMzRmLTQzMDEtYWUxMy1lYjg0OWU1N2U4ZTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.l3HBVSn9wOLA2RTgYg36uJtmxUhXHFaxDXENs8sV0f4",
+        "largePoster": "https://images.wikia.nocookie.net/jamesbond/images/5/5f/No_Time_to_Die_poster.jpg",
+        "synopsis": "James Bond's final mission in this thrilling conclusion.",
+        "rentPrice": 3.99,
+        "purchasePrice": 14.99,
+        "year": 2021,
+        "genre": "Action, Adventure, Thriller",
+        "mediaType": "movie",
+        "featured": true,
         "description": "James Bond's final mission in this thrilling conclusion."
     }
 ]
