@@ -7,8 +7,6 @@ export const Layout: React.FC<{
   children: React.ReactNode;
 }> = ({ children }) => {
   const [showLoginModal, setShowLoginModal] = useState(false);
-  // NOTE: Take care of userProfileEndpoint which will show the current logged in user details/profile.
-  // const { registerEndpoint, loginEndpoint, userProfileEndpoint } = layoutConfig;
   const { registerEndpoint, loginEndpoint, searchEndpoint } = layoutConfig;
   const [showRegisterModal, setShowRegisterModal] = useState(false);
   return (
