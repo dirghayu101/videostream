@@ -3,7 +3,6 @@ import { LoadingScreen } from "@/components/pages";
 import { Layout } from "@/components/common";
 import type { Media, MediaConfig } from "@/types";
 import { MediaList } from "@/components/media";
-import { tvShowData, movieData } from "@/const"; // Importing media constants as json server only works in local development.
 
 export const MediaPage: React.FC<MediaConfig> = ({ type, title, endpoint }) => {
   const [media, setMedia] = useState<Media[]>([]);
@@ -16,14 +15,9 @@ export const MediaPage: React.FC<MediaConfig> = ({ type, title, endpoint }) => {
         if (!response.ok) {
           throw new Error("Failed to fetch movies");
         }
-        const data = await response.json();
+        const {data} = await response.json();
         setMedia(data);
       } catch (error) {
-        if (type === "movies") {
-          setMedia(movieData); // Fallback for movies
-        } else if (type === "tvshows") {
-          setMedia(tvShowData); // Fallback for TV shows
-        }
         console.error("Error fetching data:", error);
         setLoading(false);
       } finally {
@@ -38,7 +32,7 @@ export const MediaPage: React.FC<MediaConfig> = ({ type, title, endpoint }) => {
   }
   return (
     <Layout>
-      <MediaList media={media} type={type} title={title} />
+      <MediaList media={media} type="media" title={title} />
     </Layout>
   );
 };

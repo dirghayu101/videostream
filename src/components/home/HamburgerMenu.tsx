@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "@/context";
 
 export const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { isAuthenticated, user } = useAuth();
 
   return (
     <div className="md:hidden relative">
@@ -34,6 +36,20 @@ export const HamburgerMenu = () => {
           <Link to="/tvshows" onClick={() => setIsOpen(false)} className="hover:text-red-500">
             TV Shows
           </Link>
+          {isAuthenticated && (
+            <Link 
+              to="/profile" 
+              onClick={() => setIsOpen(false)} 
+              className="hover:text-red-500 flex items-center space-x-2 border-t border-gray-600 pt-4"
+            >
+              <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                <span className="text-white text-xs font-bold">
+                  {user?.firstName?.charAt(0)}{user?.lastName?.charAt(0)}
+                </span>
+              </div>
+              <span>Profile</span>
+            </Link>
+          )}
         </div>
       )}
     </div>

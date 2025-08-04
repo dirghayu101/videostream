@@ -7,8 +7,6 @@ import {
   ContentSection,
 } from "@/components/home";
 import { LoadingScreen } from "@/components/pages";
-// Mock data imports as json-server only works in local development.
-import {heroMovieData, movieData, tvShowData} from "@/const"
 
 export const Homepage: React.FC<HomepageConfig> = ({
   movieEndpoint,
@@ -25,8 +23,7 @@ export const Homepage: React.FC<HomepageConfig> = ({
       try {
         // Fetch movies
         const moviesResponse = await fetch(movieEndpoint);
-        const moviesData = await moviesResponse.json();
-        // Fallback to mock data if the fetch fails
+        const { data: moviesData } = await moviesResponse.json();
         if (!Array.isArray(moviesData) || moviesData.length === 0) {
           throw new Error("No movies data found");
         }
@@ -34,24 +31,22 @@ export const Homepage: React.FC<HomepageConfig> = ({
 
         // Fetch hero movies
         const heroMoviesResponse = await fetch(heroMovieEndpoint);
-        const heroMoviesData = await heroMoviesResponse.json();
-        if( !Array.isArray(heroMoviesData) || heroMoviesData.length === 0) {
+        const { data: heroMoviesData } = await heroMoviesResponse.json();
+
+        if (!Array.isArray(heroMoviesData) || heroMoviesData.length === 0) {
           throw new Error("No hero movies data found");
         }
         setHeroMovies(heroMoviesData);
 
         // Fetch TV shows
         const tvShowsResponse = await fetch(tvShowsEndpoint);
-        const tvShowsData = await tvShowsResponse.json();
+        const { data: tvShowsData } = await tvShowsResponse.json();
         if (!Array.isArray(tvShowsData) || tvShowsData.length === 0) {
           throw new Error("No TV shows data found");
         }
         setTvShows(tvShowsData);
         setLoading(false);
       } catch (error) {
-        setTvShows(tvShowData); // Fallback to mock data
-        setMovies(movieData); // Fallback to mock data
-        setHeroMovies(heroMovieData); // Fallback to mock data
         console.error("Error fetching data:", error);
         setLoading(false);
       }
@@ -66,15 +61,11 @@ export const Homepage: React.FC<HomepageConfig> = ({
 
   return (
     <Layout>
-      <HeroSlideshow heroMovies={heroMovies} />
+      <HeroSlideshow heroMovies={heroMovies.slice(0, 5)} />
 
-      <FeaturedSection title="Featured Movies" items={movies} type="movies" />
+      <FeaturedSection title="Featured Movies" items={movies} type="media" />
 
-      <FeaturedSection
-        title="Featured TV Shows"
-        items={tvShows}
-        type="tvshows"
-      />
+      <FeaturedSection title="Featured TV Shows" items={tvShows} type="media" />
 
       <ContentSection />
     </Layout>

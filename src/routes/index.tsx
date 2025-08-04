@@ -1,5 +1,5 @@
 import type { RouteObject } from "react-router-dom";
-import { Homepage, MediaPage } from "@/components/pages";
+import { Homepage, MediaPage, UserProfilePage } from "@/components/pages";
 import { moviesConfig, tvShowsConfig, homepageConfig, mediaDetailConfig } from "@/config";
 import { MediaDetailPage } from "@/components/pages/MediaDetailPage";
 
@@ -17,7 +17,11 @@ export const routes: RouteObject[] = [
     element: <MediaPage {...tvShowsConfig} />,
   },
   {
-    path: "/:type/:id",
+    path: "/media/:id",
     element: <MediaDetailPage {...mediaDetailConfig} />,
+  },
+  {
+    path: "/profile",
+    element: <UserProfilePage />,
   }
 ];

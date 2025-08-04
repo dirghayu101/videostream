@@ -1,16 +1,48 @@
 import type { ModalProps } from '@/types';
 import React, { useState } from 'react';
+import { useAuth } from '@/context';
+import { useNavigate } from 'react-router-dom';
 
-export const LoginModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
+export const LoginModal: React.FC<ModalProps> = ({ isOpen, onClose, endpoint }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.MouseEvent) => {
+  const handleSubmit = async (e: React.MouseEvent) => {
     e.preventDefault();
-    console.log('Login attempt:', { email, password });
-    onClose();
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await fetch(endpoint!, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        // Login successful
+        login(data.data.token, data.data.user);
+        onClose();
+        navigate('/profile');
+      } else {
+        setError(data.message || 'Login failed');
+      }
+    } catch (error) {
+      setError('Network error occurred');
+      console.error('Login error:', error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -22,6 +54,11 @@ export const LoginModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             ✕
           </button>
         </div>
+        {error && (
+          <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+            {error}
+          </div>
+        )}
         <div>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -33,6 +70,7 @@ export const LoginModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-red-600"
               required
+              disabled={loading}
             />
           </div>
           <div className="mb-6">
@@ -45,13 +83,19 @@ export const LoginModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-red-600"
               required
+              disabled={loading}
             />
           </div>
           <button
             onClick={handleSubmit}
-            className="w-full bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors"
+            disabled={loading}
+            className={`w-full py-2 px-4 rounded-lg transition-colors ${
+              loading 
+                ? 'bg-gray-400 cursor-not-allowed' 
+                : 'bg-red-600 hover:bg-red-700'
+            } text-white`}
           >
-            Login
+            {loading ? 'Logging in...' : 'Login'}
           </button>
         </div>
       </div>
